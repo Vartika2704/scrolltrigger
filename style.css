@@ -1,0 +1,204 @@
+:root{
+    --color-accent:rgb(230,170,40);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a,p{
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: "Basis Grotesque Pro";
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5cm 2cm;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5cm 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>div{
+    flex: 1;
+}
+
+.links1{
+    display: flex;
+    gap: 2cm;
+}
+.links2{
+    display: flex;
+    gap: 2cm;
+    justify-content: flex-end;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo a{
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: -0.02cm;
+}
+
+.container{
+    width: 100%;
+    height: 5500vh;
+    
+}
+
+.activeslide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.activeslide img{
+    position: absolute;
+    filter: blur(5px);
+    transform: scale(1.05);
+
+
+}
+
+.slider {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slide {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.slidecopy p{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "PP Monument Extended";
+    font-size: 13px;
+    font-weight: bolder;
+    line-height: 150%;
+    color: var(--color-accent);
+}
+.slidecopy p#index{
+    font-family: "Basis Grotesque Pro";
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 0.75cm;
+}
+
+#slide1{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-22500px);
+    opacity: 0;
+}
+
+#slide2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-20000px);
+    opacity: 0;
+}
+#slide3{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-17500px);
+    opacity: 0;
+}
+#slide4{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-15000px);
+    opacity: 0;
+}
+#slide5{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-12500px);
+    opacity: 0;
+}
+#slide6{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-10000px);
+    opacity: 0;
+}
+#slide7{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+    opacity: 0;
+}
+#slide8{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-5000px);
+    opacity: 0;
+}
+#slide9{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-2500px);
+    opacity: 0.5;
+}
+#slide10{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(0px);
+    opacity: 1;
+}
